@@ -20,7 +20,7 @@ test('login, add iPhone X to cart and verify in checkout', async ({ page }) => {
   await Promise.all([
     page.waitForNavigation({ waitUntil: 'networkidle' }).catch(() => {}),
     signIn.click()
-  ]);
+  ]); 
 
   // Wait for shop/products area to load
   await page.waitForLoadState('networkidle');
